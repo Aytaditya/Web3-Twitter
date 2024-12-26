@@ -23,7 +23,8 @@ body {
 .container {
   display: flex;
   gap: 32px;
-  padding: 32px;
+  padding-top: 32px;
+  justify-content: space-between;
 }
 
 .welcome-card, .latest-changes-card {
@@ -44,7 +45,7 @@ body {
 }
 
 .heading {
-  font-size: 45px;
+  font-size: 55px;
   font-weight: bold;
   background: linear-gradient(to right, #00ff9d, #00b8ff);
   -webkit-background-clip: text;
@@ -108,10 +109,8 @@ body {
 }
 
 .marginTopp{
-  
-  margin-left: 10px;
-}
-
-.text-change{
+  background: rgb(112, 110, 110);
   color:#bfb5b5;
 }
+
+

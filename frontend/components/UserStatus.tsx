@@ -33,17 +33,19 @@ const UserStatus = () => {
 
   return(
     <div className="container">
-          <div className="welcome-card">
-            
+          <div className="">
+            <div className='colorChange'>
+            <span className="marginTopp text-change"> <Twitter size={75}/></span>
+            </div>
             <div className='flex'>
             <h2 className="heading flex">
-                Welcome to 
-                <span className="marginTopp text-change"> <Twitter size={60}/></span>
+                Welcome to Twitter
+                
             </h2>
             </div>
             <p className="text">
               Experience the future of social media with our decentralized platform. 
-              Connect your wallet to get started and enjoy:
+              {/* Connect your wallet to get started and enjoy: */}
             </p>
             <ul className="list">
               {features.map((feature, index) => (

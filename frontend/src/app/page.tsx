@@ -4,6 +4,7 @@ import { chain } from './chain'
 import { client } from './client'
 import UserStatus from '../../components/UserStatus'
 import { XIcon } from 'lucide-react'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
           <ConnectButton chain={chain} client={client} />
         </div>
       </nav>
-      <hr className="border-t border-gray-800" />
+      <hr className="border-t border-white/10" />
       <main style={{
         maxWidth: '1200px',
         margin: '32px auto',
@@ -45,6 +46,7 @@ const Home = () => {
       }}>
         <UserStatus />
       </main>
+      <Footer/>
     </div>
   )
 }
