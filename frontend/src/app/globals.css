@@ -40,8 +40,9 @@ body {
 }
 
 .latest-changes-card {
-  width: 300px;
+  width: 380px;
   height: 250px;
+  margin-top: 15px;
 }
 
 .heading {

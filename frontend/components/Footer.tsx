@@ -11,6 +11,7 @@ const Footer = () => {
             Powered by secure blockchain technology
           </span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: '#a1a1aa' }}>
+          <a href="#" style={{ color: '#00b8ff', transition: 'color 0.3s', textDecoration: 'none' }} >1Cr+ Users</a>
             <a href="#" style={{ color: '#a1a1aa', transition: 'color 0.3s', textDecoration: 'none' }} >Terms</a>
             <a href="#" style={{ color: '#a1a1aa', transition: 'color 0.3s', textDecoration: 'none' }} >Privacy</a>
             <a 

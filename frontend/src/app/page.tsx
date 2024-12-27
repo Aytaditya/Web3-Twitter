@@ -3,7 +3,7 @@ import { ConnectButton } from 'thirdweb/react'
 import { chain } from './chain'
 import { client } from './client'
 import UserStatus from '../../components/UserStatus'
-import { XIcon } from 'lucide-react'
+import { Twitter, HomeIcon, Bell, Mail, User, Search } from 'lucide-react'
 import Footer from '../../components/Footer'
 
 const Home = () => {
@@ -15,11 +15,11 @@ const Home = () => {
     }}>
       <nav style={{
         backgroundColor: 'black',
-        padding: '16px',
+        padding: '12px 16px',
         position: 'sticky',
         top: 0,
         zIndex: 10,
-        boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+        borderBottom: '1px solid #2f3336'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -28,17 +28,14 @@ const Home = () => {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-          <h1 style={{
-            fontSize: '27px',
-            fontWeight: 800,
-            background: 'linear-gradient(to right, #00ff9d, #00b8ff)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>Web3 Twitter</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
+            <h1 className='text-[30px] text-[#1d9bf0] font-bold'>Twitter</h1>
+            <Twitter size={32} color="#1d9bf0" />
+            
+          </div>
           <ConnectButton chain={chain} client={client} />
         </div>
       </nav>
-      <hr className="border-t border-white/10" />
       <main style={{
         maxWidth: '1200px',
         margin: '32px auto',
@@ -52,4 +49,3 @@ const Home = () => {
 }
 
 export default Home
-
